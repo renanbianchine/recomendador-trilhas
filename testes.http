@@ -1,0 +1,27 @@
+### Cadastrar uma nova trilha
+POST http://localhost:8080/api/trilhas
+Content-Type: application/json
+
+{
+  "nome": "Trilha da Pedra Grande",
+  "dificuldade": "DIFICIL",
+  "tempoEstimadoEmHoras": 4,
+  "cachoeira": false
+}
+
+### Cadastrar trilha 2 (Iniciante)
+POST http://localhost:8080/api/trilhas
+Content-Type: application/json
+
+{
+  "nome": "Trilha do Bosque",
+  "dificuldade": "INICIANTE",
+  "tempoEstimadoEmHoras": 2,
+  "cachoeira": true
+}
+
+### Buscar todas as trilhas
+GET http://localhost:8080/api/trilhas
+
+### Buscar SÓ as trilhas difíceis
+GET http://localhost:8080/api/trilhas?dificuldade=DIFICIL
